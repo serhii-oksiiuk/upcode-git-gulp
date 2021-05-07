@@ -93,10 +93,9 @@ var player;
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        height: '360',
-        width: '640',
+        
         videoId: 'OLi5_8JWoAU',
-        autoplay: true,
+        autoplay: false,
         events: {
             'onReady': onPlayerReady,
            // 'onStateChange': onPlayerStateChange
