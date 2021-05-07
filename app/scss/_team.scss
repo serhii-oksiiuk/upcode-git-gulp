@@ -1,0 +1,48 @@
+#team{
+    color: $gray6;
+    .name-person{
+        font-family: $Extra;
+        font-size: 38px;
+        line-height: 51px;
+        letter-spacing: 0.4000000059604645px;
+        margin-bottom: 10px;
+        color: $green;
+    }
+    .profession{
+        font-family: $Gilroy;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 3px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+    .desc-about-person{
+        font-family: $Regular;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        margin-bottom: 43px;
+        
+    }
+    .social-person{
+        margin-bottom: 70px;
+        ul{
+            display: flex;
+            padding-left: 20px;
+        }
+        li{
+            list-style-type: disc;
+            margin-right: 26px;
+        }
+        
+        a{
+            font-family: $Gilroy;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 3px;
+            color: $gray6;
+            text-transform: uppercase;
+        }
+    }
+}

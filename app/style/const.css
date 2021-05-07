@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Regular.ttf"); }
+@font-face {
+  font-family: "Poppins-Regular";
+  font-weight: 400;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf"); }
+@font-face {
+  font-family: "Poppins-SemiBold";
+  font-weight: 600;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf"); }
+@font-face {
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  src: url("../fonts/Poppins/Poppins-Bold.ttf"); }
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  font-weight: 800;
+  src: url("../fonts/Poppins/Poppins-ExtraBold.ttf"); }
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  font-family: "Poppins-Regular", sans-serif; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  color: #ffffff; }
+
+li {
+  list-style-type: none; }
+
+.container {
+  max-width: 1200px; }

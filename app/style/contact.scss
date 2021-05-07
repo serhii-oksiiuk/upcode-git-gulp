@@ -1,0 +1,217 @@
+#contacts{
+    padding-top: 90px;
+    padding-bottom: 190px;
+    h4{
+        font-family: $Bold;
+        color: $green;
+        font-size: 52px;
+        line-height: 60px;
+        margin: 0 0 12px;
+    }
+    .col-md-4{
+        padding-right: 0;
+    }
+    .col-md-7{
+        padding-left: 0;
+    }
+    .head-adressa{
+        font-family: $Regular;
+        color: $gray6;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        max-width: 270px;
+        margin-bottom: 27px;
+    }
+    //list adresses
+    ul.list-pick-maps{
+        li.one-adress{
+            position: relative;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 57px;
+            padding-right: 5px;
+            max-width: 270px;
+            cursor: pointer;
+        }
+        li.one-adress:hover,
+        li.one-adress.active{
+            background: $white;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.0758039);
+        }
+        li.one-adress:hover ::before,
+        li.one-adress::before{
+            content: url(../images/maps.svg);
+            position: absolute;
+            top: 25px;
+            left: 15px;
+
+        }
+        li.one-adress:hover ::before,
+        li.one-adress.active::before{
+            content: url(../images/maps-act.svg);
+        }
+        li.one-adress::after{
+            content: '';
+            position: absolute;
+            width: 244px;
+            height: 1px;
+            background:#eeeeee;
+            bottom: 0;
+            left:0;
+        }
+        li.one-adress:last-child::after,
+        li.one-adress:hover ::after{
+            display: none;
+        }
+        li.one-adress{
+            display: flex;
+            flex-direction: column;
+        }
+        li.one-adress .title{
+            font-family: $Semi;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+            color: $green;
+            margin-bottom: 5px;
+        }
+        li.one-adress .adressa{
+            font-family: $Regular;
+            color: $gray6;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+        }
+    }
+    //map
+    .maps{
+        min-height: 755px;
+    }
+    #map{
+        height: 100%;
+        width: 100%;
+    }
+    
+    //desc-for-adressa
+    .relative-content{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .desc-for-adressa{
+        position: absolute;
+        width: 320px;
+        right: 0;
+        li.one-item-description{
+            box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.0758039);
+            width: 100%;
+            padding: 25px 20px 25px 60px; 
+            background: $white;
+            display: none;
+        }
+        .one-item-description.active{
+            display: block;
+        }
+        .title-desc-map{
+            font-family: $Extra;
+            font-size: 38px;
+            line-height: 51px;
+            letter-spacing: 0.4px;
+            color: $extra;
+            margin: 0;
+        }
+        .adressa-desc-map{
+            font-family: $Regular;
+            color: $gray6;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            margin-bottom: 20px;
+        }
+        .item-contacts{
+            position: relative;
+            margin: 10px 0;
+        }
+        
+        .title-contacts{
+            font-family: $Bold;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+            color: $extra;
+            display: flex;
+            img{
+                width: 20px;
+                height: auto;
+                margin-right: 14px;
+            }
+        }
+        .item-contacts li,
+        .item-contacts li a{
+            font-family: $Regular;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: $gray9;
+            span{
+                color: $extra
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) { 
+    #contacts{
+        padding-bottom: 30px;
+        
+        h4{
+            font-family: $Bold;
+            color: $green;
+            font-size: 28px;
+            line-height: 32px;
+            text-align: center;
+        }
+        .head-adressa{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .list-pick-maps .adressa{
+            display: none;
+        }
+        ul.list-pick-maps li.one-adress {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 57px;
+            padding-right: 5px;
+            max-width: 100%;
+            cursor: pointer;
+        }
+        .maps{
+            min-height: 50vh;
+        }
+        .desc-for-adressa .title-desc-map{
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    #contacts{
+        .col-md-4{
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .col-md-7{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        //description
+        .desc-for-adressa{
+            position: relative;
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+//footer таємне слово "Luntik", 
+//перевіряю чи взагалі хтось той код дивиться=) 
+
+footer{
+    background: $black;
+    padding: 85px 0 45px;
+    &{
+        color: $gray7;
+    }
+    .logo{
+        text-align: center;
+        img{
+            height: 45px;
+            width: auto;
+        } 
+    }
+    ul a, 
+    .development a{
+        color: $gray7;
+        
+    }
+    .development a:hover{
+        color: $green;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 50px auto;
+        max-width: 490px;
+        a{
+            position: relative;
+            font-family: $Gilroy, sans-serif;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        a::before{
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            height: 1px;
+            background-color: $gray7;
+            right: 0;
+            width: 0;
+            transition: $first;
+        }
+        a:hover::before{
+            width: 100%;
+            right: inherit;
+            left: 0;
+            transition: $first;
+        }
+        
+    }
+    .development{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.2px;
+       
+    }
+}
+
+//media
+@media (max-width: 1024px) { 
+    footer{
+        ul{
+            flex-direction: column;
+        }
+        li{
+            padding-bottom: 20px;
+        }
+    }
+}

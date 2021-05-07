@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Regular.ttf"); }
+@font-face {
+  font-family: "Poppins-Regular";
+  font-weight: 400;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf"); }
+@font-face {
+  font-family: "Poppins-SemiBold";
+  font-weight: 600;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf"); }
+@font-face {
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  src: url("../fonts/Poppins/Poppins-Bold.ttf"); }
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  font-weight: 800;
+  src: url("../fonts/Poppins/Poppins-ExtraBold.ttf"); }
