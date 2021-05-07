@@ -50,6 +50,8 @@ header .btn-hamburger span:nth-child(2) { top: 12px; }
 
 header .btn-hamburger span:last-child { top: 22px; }
 
+header .btn-hamburger.gray span { background: #6C6C6C; }
+
 header .btn-hamburger.active span { -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
 
 header .btn-hamburger.active span:first-child { top: 12px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
