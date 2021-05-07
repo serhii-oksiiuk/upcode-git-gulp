@@ -31,9 +31,11 @@ function scrollMenuActiveClass(){
         
         if(position > homeHeight){
             nav.addClass('gray');
+            $('.btn-hamburger').addClass('gray')
             $('.logo img').attr('src', srcLogoGray);
         }else{
             nav.removeClass('gray');
+            $('.btn-hamburger').removeClass('gray')
             $('.logo img').attr('src', srcLogoWhite);
         }
 
@@ -81,7 +83,6 @@ var swiper = new Swiper('.swiper-home', {
     },
 
 });
-
 
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";

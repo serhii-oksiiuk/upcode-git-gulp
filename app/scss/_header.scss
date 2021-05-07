@@ -65,6 +65,11 @@ header{
             top:22px
         }
     }
+    .btn-hamburger.gray{
+        span{
+            background: $gray6;
+        }
+    }
     .btn-hamburger.active{
         span{
             transition: $first;

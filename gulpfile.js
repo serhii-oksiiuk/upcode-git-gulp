@@ -7,6 +7,8 @@ const {
   } = require('gulp');
   
   const browserSync = require('browser-sync').create();
+  const concat = require('gulp-concat');
+  const uglify = require('gulp-uglify-es').default;
   const scss = require('gulp-sass');
   const autoprefixer = require('gulp-autoprefixer');
   const imagemin = require('gulp-imagemin');
@@ -24,16 +26,15 @@ const {
   
   
   function scripts() {
-    return src(
-        //'node_modules/jquery/dist/jquery.min.js'
-        [ 
-            'app/js/jquery.js',
-            'app/js/swiper-bundle.min.js',
-            'app/js/js.js'
-        ]
-      )
-      .pipe(dest('app/js/'))
-      .pipe(browserSync.stream())
+    return src([ // Берём файлы из источников
+          'app/js/jquery.js',
+          'app/js/swiper-bundle.min.js',
+          'app/js/js.js'
+      ])
+    .pipe(concat('js.min.js')) // Конкатенируем в один файл
+    .pipe(uglify()) // Сжимаем JavaScript
+    .pipe(dest('app/js/')) // Выгружаем готовый файл в папку назначения
+    .pipe(browserSync.stream()) // Триггерим Browsersync для обновления страницы
   }
   
   
